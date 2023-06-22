@@ -36,6 +36,28 @@ local RebirthsTab = Window:CreateTab("http://www.roblox.com/asset/?id=6031075926
 local TeleportsTab = Window:CreateTab("http://www.roblox.com/asset/?id=6022668951")
 local SettingsTab = Window:CreateTab("http://www.roblox.com/asset/?id=6031280882")
 
+HomeTab:CreateLabel("Credits")
+HomeTab:CreateButton("cerbiale#0676",function()
+	setclipboard("cerbiale#0676")
+end)
+HomeTab:CreateButton("Arkirius#9449",function()
+	setclipboard("Arkirius#9449")
+end)
+HomeTab:CreateLabel("Links")
+HomeTab:CreateButton("Cerbiale's Server",function()
+	setclipboard("https://discord.gg/UnjnNVx6Tp")
+end)
+HomeTab:CreateButton("Cerbiale's Channel",function()
+	setclipboard("https://www.youtube.com/channel/UCIx5z7_DSzgYUR8oBf6x57w")
+end)
+HomeTab:CreateButton("Arkirius' Server",function()
+	setclipboard("https://discord.gg/jAPz6vpzXX")
+end)
+HomeTab:CreateButton("Arkirius' Channel",function()
+	setclipboard("https://www.youtube.com/@Arkirius_YTOfficial")
+end)
+
+
 -- 《 Define AutoFarmTab 》 --
 AutoFarmTab:CreateLabel("Universal")
 AutoFarmTab:CreateToggle("Auto Race",function(state) 
