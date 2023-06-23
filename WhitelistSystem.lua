@@ -202,7 +202,7 @@ local tween4 = TweenService:Create(StatusBar_1, tweenInfo, {Size = targetSize4})
 local tween5 = TweenService:Create(StatusBar_1, tweenInfo, {Size = targetSize5})
 
 wait(2)
-StatusText_1.Text = "Getting Script Status"
+StatusText_1.Text = "Getting Script Status..."
 tween1:Play()
 wait(2)
 StatusText_1.Text = "Getting UserID..."
