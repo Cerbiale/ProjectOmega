@@ -27,7 +27,7 @@ local UIPadding_3 = Instance.new("UIPadding")
 
 -- Properties:
 WhitelistSystem.Name = "WhitelistSystem"
-WhitelistSystem.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+WhitelistSystem.Parent = game.CoreGui
 WhitelistSystem.Enabled = true
 
 Main_1.Name = "Main"
