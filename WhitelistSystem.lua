@@ -36,7 +36,7 @@ Main_1.AnchorPoint = Vector2.new(0.5, 0.5)
 Main_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
 Main_1.BackgroundTransparency = 0.6000000238418579
 Main_1.BorderColor3 = Color3.fromRGB(27,42,53)
-Main_1.Position = UDim2.new(0.474691361, 0,0.47430408, 0)
+Main_1.Position = UDim2.new(0.5, 0,0.5, 0)
 Main_1.Size = UDim2.new(0, 236,0, 158)
 
 UICorner_1.Parent = Main_1
