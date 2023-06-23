@@ -226,6 +226,8 @@ if Player.UserId ~= 1 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/LegendsOfSpeed.lua"))()
 	elseif game.PlaceId == 189707 then -- Natural Disaster Survival
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/NaturalDisasterSurvival.lua"))()
+	elseif game.PlaceId == 3956818381 then -- Ninja Legends
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/NinjaLegends.lua"))()
 	end
 	game.CoreGui:FindFirstChild("WhitelistSystem"):Destroy()
 else
