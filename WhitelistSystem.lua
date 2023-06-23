@@ -1,200 +1,238 @@
 local TweenService = game:GetService("TweenService")
 local Player = game.Players.LocalPlayer
 
-local WLCheck = Instance.new("ScreenGui")
-local Info_1 = Instance.new("Frame")
-local Items_1 = Instance.new("Frame")
+local WhitelistSystem = Instance.new("ScreenGui")
+local Main_1 = Instance.new("Frame")
 local UICorner_1 = Instance.new("UICorner")
-local IDFrame_1 = Instance.new("Frame")
+local Elements_1 = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local UserID_1 = Instance.new("TextLabel")
-local WLCheckFrame_1 = Instance.new("Frame")
+local UserIdHolder_1 = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
-local Bar_1 = Instance.new("Frame")
+local UserId_1 = Instance.new("TextLabel")
+local StatusHolder_1 = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
-local Bar_2 = Instance.new("Frame")
+local StatusText_1 = Instance.new("TextLabel")
+local StatusBarHolder_1 = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
-local Status_1 = Instance.new("TextLabel")
-local Top_1 = Instance.new("Frame")
+local StatusBar_1 = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
-local TextLabel_1 = Instance.new("TextLabel")
-local UIPadding_1 = Instance.new("UIPadding")
+local TopBar_1 = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
+local TitleTxt_1 = Instance.new("TextLabel")
+local UIPadding_1 = Instance.new("UIPadding")
+local ExtraTxt_1 = Instance.new("TextLabel")
+local UIPadding_2 = Instance.new("UIPadding")
+local InBetweenTxt_1 = Instance.new("TextLabel")
+local UIPadding_3 = Instance.new("UIPadding")
 
 -- Properties:
-WLCheck.Name = "WLCheck"
-WLCheck.Parent = game.CoreGui
-WLCheck.Enabled = true
+WhitelistSystem.Name = "WhitelistSystem"
+WhitelistSystem.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+WhitelistSystem.Enabled = true
 
-Info_1.Name = "Info"
-Info_1.Parent = WLCheck
-Info_1.AnchorPoint = Vector2.new(0.5, 0.5)
-Info_1.BackgroundColor3 = Color3.fromRGB(53,53,53)
-Info_1.BorderColor3 = Color3.fromRGB(27,42,53)
-Info_1.Position = UDim2.new(0.5, 0,0.5, 0)
-Info_1.Size = UDim2.new(0, 285,0, 155)
-Info_1.BackgroundTransparency = 0.6
+Main_1.Name = "Main"
+Main_1.Parent = WhitelistSystem
+Main_1.AnchorPoint = Vector2.new(0.5, 0.5)
+Main_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+Main_1.BackgroundTransparency = 0.6000000238418579
+Main_1.BorderColor3 = Color3.fromRGB(27,42,53)
+Main_1.Position = UDim2.new(0.474691361, 0,0.47430408, 0)
+Main_1.Size = UDim2.new(0, 236,0, 158)
 
-Items_1.Name = "Items"
-Items_1.Parent = Info_1
-Items_1.BackgroundColor3 = Color3.fromRGB(28,28,28)
-Items_1.BorderColor3 = Color3.fromRGB(27,42,53)
-Items_1.BorderSizePixel = 0
-Items_1.BackgroundTransparency = 0.7
-Items_1.Position = UDim2.new(0.0304436292, 0,0.287210554, 0)
-Items_1.Size = UDim2.new(0, 267,0, 103)
-
-UICorner_1.Parent = Items_1
+UICorner_1.Parent = Main_1
 UICorner_1.CornerRadius = UDim.new(0,10)
 
-IDFrame_1.Name = "IDFrame"
-IDFrame_1.Parent = Items_1
-IDFrame_1.BackgroundColor3 = Color3.fromRGB(53,53,53)
-IDFrame_1.BackgroundTransparency = 0.6
-IDFrame_1.BorderColor3 = Color3.fromRGB(27,42,53)
-IDFrame_1.Position = UDim2.new(0.0274072997, 0,0.103018597, 0)
-IDFrame_1.Size = UDim2.new(0, 252,0, 30)
+Elements_1.Name = "Elements"
+Elements_1.Parent = Main_1
+Elements_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+Elements_1.BackgroundTransparency = 0.6000000238418579
+Elements_1.BorderColor3 = Color3.fromRGB(27,42,53)
+Elements_1.Position = UDim2.new(0.0440598838, 0,0.28245911, 0)
+Elements_1.Size = UDim2.new(0, 215,0, 104)
 
-UICorner_2.Parent = IDFrame_1
+UICorner_2.Parent = Elements_1
 UICorner_2.CornerRadius = UDim.new(0,10)
 
-UserID_1.Name = "UserID"
-UserID_1.Parent = IDFrame_1
-UserID_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-UserID_1.BackgroundTransparency = 1
-UserID_1.BorderColor3 = Color3.fromRGB(27,42,53)
-UserID_1.BorderSizePixel = 0
-UserID_1.Position = UDim2.new(0.103174627, 0,0.100000001, 0)
-UserID_1.Size = UDim2.new(0, 200,0, 23)
-UserID_1.Font = Enum.Font.FredokaOne
-UserID_1.Text = game:GetService("Players").LocalPlayer.UserId
-UserID_1.TextColor3 = Color3.fromRGB(255,255,255)
-UserID_1.TextSize = 16
+UserIdHolder_1.Name = "UserIdHolder"
+UserIdHolder_1.Parent = Elements_1
+UserIdHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+UserIdHolder_1.BackgroundTransparency = 0.6000000238418579
+UserIdHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+UserIdHolder_1.Position = UDim2.new(0.0394085534, 0,0.0841552168, 0)
+UserIdHolder_1.Size = UDim2.new(0, 198,0, 25)
 
-WLCheckFrame_1.Name = "WLCheckFrame"
-WLCheckFrame_1.Parent = Items_1
-WLCheckFrame_1.BackgroundColor3 = Color3.fromRGB(53,53,53)
-WLCheckFrame_1.BorderColor3 = Color3.fromRGB(27,42,53)
-WLCheckFrame_1.BackgroundTransparency = 0.6
-WLCheckFrame_1.Position = UDim2.new(0.0274072997, 0,0.478722095, 0)
-WLCheckFrame_1.Size = UDim2.new(0, 252,0, 47)
-
-UICorner_3.Parent = WLCheckFrame_1
+UICorner_3.Parent = UserIdHolder_1
 UICorner_3.CornerRadius = UDim.new(0,10)
 
-Bar_1.Name = "Bar"
-Bar_1.Parent = WLCheckFrame_1
-Bar_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
-Bar_1.BackgroundTransparency = 0.6
-Bar_1.BorderColor3 = Color3.fromRGB(27,42,53)
-Bar_1.BorderSizePixel = 0
-Bar_1.Position = UDim2.new(0.0198412705, 0,0.680851042, 0)
-Bar_1.Size = UDim2.new(0, 240,0, 6)
+UserId_1.Name = "UserId"
+UserId_1.Parent = UserIdHolder_1
+UserId_1.AnchorPoint = Vector2.new(0.5, 0.5)
+UserId_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+UserId_1.BackgroundTransparency = 1
+UserId_1.BorderColor3 = Color3.fromRGB(0,0,0)
+UserId_1.BorderSizePixel = 0
+UserId_1.Position = UDim2.new(0.5, 0,0.519999981, 0)
+UserId_1.Size = UDim2.new(0, 198,0, 24)
+UserId_1.Font = Enum.Font.FredokaOne
+UserId_1.Text = game:GetService("Players").LocalPlayer.UserId
+UserId_1.TextColor3 = Color3.fromRGB(255,255,255)
+UserId_1.TextSize = 14
 
-UICorner_4.Parent = Bar_1
+StatusHolder_1.Name = "StatusHolder"
+StatusHolder_1.Parent = Elements_1
+StatusHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+StatusHolder_1.BackgroundTransparency = 0.6000000238418579
+StatusHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+StatusHolder_1.Position = UDim2.new(0.0440597162, 0,0.401912212, 0)
+StatusHolder_1.Size = UDim2.new(0, 198,0, 55)
+
+UICorner_4.Parent = StatusHolder_1
 UICorner_4.CornerRadius = UDim.new(0,10)
 
-Bar_2.Name = "Bar"
-Bar_2.Parent = Bar_1
-Bar_2.AnchorPoint = Vector2.new(0.5, 0.5)
-Bar_2.BackgroundColor3 = Color3.fromRGB(0,16,222)
-Bar_2.BorderColor3 = Color3.fromRGB(27,42,53)
-Bar_2.BorderSizePixel = 0
-Bar_2.Position = UDim2.new(0.5, 0,0.5, 0)
-Bar_2.Size = UDim2.new(0, 0,0, 6)
+StatusText_1.Name = "StatusText"
+StatusText_1.Parent = StatusHolder_1
+StatusText_1.AnchorPoint = Vector2.new(0.5, 0.5)
+StatusText_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+StatusText_1.BackgroundTransparency = 1
+StatusText_1.BorderColor3 = Color3.fromRGB(0,0,0)
+StatusText_1.BorderSizePixel = 0
+StatusText_1.Position = UDim2.new(0.5, 0,0.302424192, 0)
+StatusText_1.Size = UDim2.new(0, 198,0, 21)
+StatusText_1.Font = Enum.Font.FredokaOne
+StatusText_1.Text = "Initializing Script..."
+StatusText_1.TextColor3 = Color3.fromRGB(0,16,222)
+StatusText_1.TextSize = 14
 
-UICorner_5.Parent = Bar_2
+StatusBarHolder_1.Name = "StatusBarHolder"
+StatusBarHolder_1.Parent = StatusHolder_1
+StatusBarHolder_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+StatusBarHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+StatusBarHolder_1.BorderSizePixel = 0
+StatusBarHolder_1.Position = UDim2.new(0.0353535339, 0,0.727273285, 0)
+StatusBarHolder_1.Size = UDim2.new(0, 184,0, 8)
+
+UICorner_5.Parent = StatusBarHolder_1
 UICorner_5.CornerRadius = UDim.new(0,10)
 
-Status_1.Name = "Status"
-Status_1.Parent = WLCheckFrame_1
-Status_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-Status_1.BackgroundTransparency = 1
-Status_1.BorderColor3 = Color3.fromRGB(27,42,53)
-Status_1.BorderSizePixel = 0
-Status_1.Position = UDim2.new(0.095238097, 0,0.148936167, 0)
-Status_1.Size = UDim2.new(0, 200,0, 19)
-Status_1.Font = Enum.Font.FredokaOne
-Status_1.Text = "Initializing Script..."
-Status_1.TextColor3 = Color3.fromRGB(255,255,255)
-Status_1.TextSize = 14
+StatusBar_1.Name = "StatusBar"
+StatusBar_1.Parent = StatusBarHolder_1
+StatusBar_1.AnchorPoint = Vector2.new(0.5, 0.5)
+StatusBar_1.BackgroundColor3 = Color3.fromRGB(0,16,222)
+StatusBar_1.BorderColor3 = Color3.fromRGB(0,0,0)
+StatusBar_1.BorderSizePixel = 0
+StatusBar_1.Position = UDim2.new(0.5, 0,0.5, 0)
+StatusBar_1.Size = UDim2.new(0, 0,0, 8)
 
-Top_1.Name = "Top"
-Top_1.Parent = Info_1
-Top_1.BackgroundColor3 = Color3.fromRGB(28,28,28)
-Top_1.BorderColor3 = Color3.fromRGB(27,42,53)
-Top_1.BackgroundTransparency = 0.6
-Top_1.BorderSizePixel = 0
-Top_1.Position = UDim2.new(0.0310285613, 0,0.0610747412, 0)
-Top_1.Size = UDim2.new(0, 266,0, 29)
-
-UICorner_6.Parent = Top_1
+UICorner_6.Parent = StatusBar_1
 UICorner_6.CornerRadius = UDim.new(0,10)
 
-TextLabel_1.Parent = Top_1
-TextLabel_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-TextLabel_1.BackgroundTransparency = 1
-TextLabel_1.BorderColor3 = Color3.fromRGB(27,42,53)
-TextLabel_1.BorderSizePixel = 0
-TextLabel_1.Position = UDim2.new(0.0142484969, 0,0.137931034, 0)
-TextLabel_1.Size = UDim2.new(0, 254,0, 21)
-TextLabel_1.Font = Enum.Font.FredokaOne
-TextLabel_1.Text = "Project Omega | Whitelist System"
-TextLabel_1.TextColor3 = Color3.fromRGB(0,16,222)
-TextLabel_1.TextSize = 13
-TextLabel_1.TextXAlignment = Enum.TextXAlignment.Left
+TopBar_1.Name = "TopBar"
+TopBar_1.Parent = Main_1
+TopBar_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+TopBar_1.BackgroundTransparency = 0.6000000238418579
+TopBar_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TopBar_1.Position = UDim2.new(0.0440598838, 0,0.05250955, 0)
+TopBar_1.Size = UDim2.new(0, 215,0, 28)
 
-UIPadding_1.Parent = TextLabel_1
-UIPadding_1.PaddingLeft = UDim.new(0,8)
-
-UICorner_7.Parent = Info_1
+UICorner_7.Parent = TopBar_1
 UICorner_7.CornerRadius = UDim.new(0,10)
 
-local targetSize5 = UDim2.new(0, 48,0, 6)
-local targetSize1 = UDim2.new(0, 96,0, 6)
-local targetSize2 = UDim2.new(0, 144,0, 6)
-local targetSize3 = UDim2.new(0, 192,0, 6)
-local targetSize4 = UDim2.new(0, 240,0, 6)
+TitleTxt_1.Name = "TitleTxt"
+TitleTxt_1.Parent = TopBar_1
+TitleTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TitleTxt_1.BackgroundTransparency = 1
+TitleTxt_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TitleTxt_1.BorderSizePixel = 0
+TitleTxt_1.Position = UDim2.new(0, 0,0.0976190567, 0)
+TitleTxt_1.Size = UDim2.new(0, 93,0, 22)
+TitleTxt_1.Font = Enum.Font.FredokaOne
+TitleTxt_1.Text = "Project Omega"
+TitleTxt_1.TextColor3 = Color3.fromRGB(0,16,222)
+TitleTxt_1.TextSize = 14
+TitleTxt_1.TextXAlignment = Enum.TextXAlignment.Left
 
-local tweenInfo = TweenInfo.new(1)
-local tween5 = TweenService:Create(Bar_2, tweenInfo, {Size = targetSize5})
-local tween1 = TweenService:Create(Bar_2, tweenInfo, {Size = targetSize1})
-local tween2 = TweenService:Create(Bar_2, tweenInfo, {Size = targetSize2})
-local tween3 = TweenService:Create(Bar_2, tweenInfo, {Size = targetSize3})
-local tween4 = TweenService:Create(Bar_2, tweenInfo, {Size = targetSize4})
+UIPadding_1.Parent = TitleTxt_1
+UIPadding_1.PaddingLeft = UDim.new(0,5)
+
+ExtraTxt_1.Name = "ExtraTxt"
+ExtraTxt_1.Parent = TopBar_1
+ExtraTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ExtraTxt_1.BackgroundTransparency = 1
+ExtraTxt_1.BorderColor3 = Color3.fromRGB(27,42,53)
+ExtraTxt_1.BorderSizePixel = 0
+ExtraTxt_1.Position = UDim2.new(0.508203685, 0,0.130952016, 0)
+ExtraTxt_1.Size = UDim2.new(0, 98,0, 22)
+ExtraTxt_1.Font = Enum.Font.FredokaOne
+ExtraTxt_1.Text = "Whitelist System"
+ExtraTxt_1.TextColor3 = Color3.fromRGB(255,255,255)
+ExtraTxt_1.TextSize = 14
+ExtraTxt_1.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_2.Parent = ExtraTxt_1
+UIPadding_2.PaddingRight = UDim.new(0,5)
+
+InBetweenTxt_1.Name = "InBetweenTxt"
+InBetweenTxt_1.Parent = TopBar_1
+InBetweenTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+InBetweenTxt_1.BackgroundTransparency = 1
+InBetweenTxt_1.BorderColor3 = Color3.fromRGB(27,42,53)
+InBetweenTxt_1.BorderSizePixel = 0
+InBetweenTxt_1.Position = UDim2.new(0.431258023, 0,0.0619047657, 0)
+InBetweenTxt_1.Size = UDim2.new(0, 11,0, 22)
+InBetweenTxt_1.Font = Enum.Font.FredokaOne
+InBetweenTxt_1.Text = "|"
+InBetweenTxt_1.TextColor3 = Color3.fromRGB(255,255,255)
+InBetweenTxt_1.TextSize = 14
+InBetweenTxt_1.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_3.Parent = InBetweenTxt_1
+UIPadding_3.PaddingLeft = UDim.new(0,5)
+
+local targetSize1 = UDim2.new(0, 36.8,0, 8)
+local targetSize2 = UDim2.new(0, 73.6,0, 8)
+local targetSize3 = UDim2.new(0, 110.4,0, 8)
+local targetSize4 = UDim2.new(0, 147.2,0, 8)
+local targetSize5 = UDim2.new(0, 184,0, 8)
+
+local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Exponential)
+local tween1 = TweenService:Create(StatusBar_1, tweenInfo, {Size = targetSize1})
+local tween2 = TweenService:Create(StatusBar_1, tweenInfo, {Size = targetSize2})
+local tween3 = TweenService:Create(StatusBar_1, tweenInfo, {Size = targetSize3})
+local tween4 = TweenService:Create(StatusBar_1, tweenInfo, {Size = targetSize4})
+local tween5 = TweenService:Create(StatusBar_1, tweenInfo, {Size = targetSize5})
 
 wait(2)
-Status_1.Text = "Getting Script Status"
-tween5:Play()
-wait(2)
-Status_1.Text = "Getting UserID..."
+StatusText_1.Text = "Getting Script Status"
 tween1:Play()
 wait(2)
-Status_1.Text = "Checking Whitelist..."
+StatusText_1.Text = "Getting UserID..."
 tween2:Play()
+wait(2)
+StatusText_1.Text = "Checking Whitelist..."
+tween3:Play()
 
 if Player.UserId ~= 1 then 
 	wait(2)
-	Status_1.Text = "Whitelisted!"
-	tween3:Play()
-	wait(2)
-	Status_1.Text = "Loading Script!"
+	StatusText_1.Text = "Whitelisted!"
 	tween4:Play()
 	wait(2)
-	WLCheck.Enabled = false
-    if game.PlaceId == 662417684 then   -- Lucky Block Battlegrounds
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/LuckyBlockBattlegrounds.lua"))()
-    elseif game.PlaceId == 3101667897 then   -- Legends Of Speed
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/LegendsOfSpeed.lua"))()
-    end
-    game.CoreGui:FindFirstChild("WLCheck"):Destroy()
+	StatusText_1.Text = "Loading Script!"
+	tween5:Play()
+	wait(2)
+	WhitelistSystem.Enabled = false
+	if game.PlaceId == 662417684 then   -- Lucky Block Battlegrounds
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/LuckyBlockBattlegrounds.lua"))()
+	elseif game.PlaceId == 3101667897 then   -- Legends Of Speed
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/LegendsOfSpeed.lua"))()
+	end
+	game.CoreGui:FindFirstChild("WhitelistSystem"):Destroy()
 else
 	wait(2)
-	Status_1.Text = "Not Whitelisted!"
-	tween3:Play()
-	wait(2)
-	Status_1.Text = "The script will be destroyed!"
+	StatusText_1.Text = "Not Whitelisted!"
 	tween4:Play()
-wait(2)
-	game.CoreGui:FindFirstChild("WLCheck"):Destroy()
+	wait(2)
+	StatusText_1.Text = "The script will be destroyed!"
+	tween5:Play()
+	wait(2)
+	game.CoreGui:FindFirstChild("WhitelistSystem"):Destroy()
 end
