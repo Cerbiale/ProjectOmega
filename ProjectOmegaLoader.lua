@@ -9,6 +9,8 @@
 
 ]]--
 
+repeat task.wait() until game:IsLoaded()
+
 do
 	local v0 = string.char;
 	local v1 = string.byte;
