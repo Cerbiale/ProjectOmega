@@ -1,7 +1,7 @@
 if game.PlaceId == 662417684 then   -- Lucky Block Battlegrounds
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/LuckyBlockBattlegrounds.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/LuckyBlockBattlegrounds.lua"))()
 elseif game.PlaceId == 3101667897 then   -- Legends Of Speed
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/LegendsOfSpeed.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/LegendsOfSpeed.lua"))()
 elseif game.PlaceId == 189707 then -- Natural Disaster Survival
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/NaturalDisasterSurvival.lua"))()
 elseif game.PlaceId == 3956818381 then -- Ninja Legends
