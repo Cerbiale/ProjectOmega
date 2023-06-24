@@ -228,6 +228,8 @@ if Player.UserId ~= 1 then
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/NaturalDisasterSurvival.lua"))()
 	elseif game.PlaceId == 3956818381 then -- Ninja Legends
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/NinjaLegends.lua"))()
+	elseif game.PlaceId == 13230182363 then -- +1 Money Every Click
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/PlusOneMoney.lua"))()
 	end
 	game.CoreGui:FindFirstChild("WhitelistSystem"):Destroy()
 else
