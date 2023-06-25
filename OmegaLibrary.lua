@@ -234,6 +234,9 @@ function Library:CreateWindow(GameName)
 	UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 	
 	local Tabs = {}
+	
+	local first = true
+	
 	function Tabs:CreateTab(ImageID)
 		local targetTabColorOn = Color3.fromRGB(8, 23, 107)		
 		local targetTabColorOff = Color3.fromRGB(0,16,222)
@@ -317,15 +320,22 @@ function Library:CreateWindow(GameName)
 		local tweenton = TweenService:Create(TabBtn_1, tweenInfo, {ImageColor3 = targetTabColorOn})  
 		local tweentoff = TweenService:Create(TabBtn_1, tweenInfo, {ImageColor3 = targetTabColorOff})  
 		
+		if first then
+            first = false
+            Elements_1.Visible = true
+        else
+            Elements_1.Visible = false
+        end
+        
 		TabBtn_1.MouseButton1Click:Connect(function()    
-			tweenton:Play()  
-			wait(0.1)  
-			tweentoff:Play()  
-			for i,v in next, ElementsHolder_1:GetChildren() do -- We get all the pages that we added    
-				v.Visible = false   -- then we make them invisible     
-			end     
-			Elements_1.Visible = true  -- We make current page visible but not others    
-		end) 
+              tweenton:Play()  
+              wait(0.1)  
+              tweentoff:Play()  
+          	for i,v in next, ElementsHolder_1:GetChildren() do -- We get all the pages that we added    
+	              v.Visible = false   -- then we make them invisible     
+		      end     
+			  Elements_1.Visible = true  -- We make current page visible but not others     
+end)
 		
 		local Elements = {}
 		function Elements:CreateLabel(LabName)
