@@ -218,7 +218,7 @@ Discord_1.AnchorPoint = Vector2.new(0.5, 0.5)
 Discord_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
 Discord_1.BackgroundTransparency = 0.6
 Discord_1.BorderColor3 = Color3.fromRGB(27,42,53)
-Discord_1.Position = UDim2.new(0.629999995, 0,0.5, 0)
+Discord_1.Position = UDim2.new(0.64, 0,0.5, 0)
 Discord_1.Size = UDim2.new(0, 123,0, 158)
 
 UICorner_8.Parent = Discord_1
@@ -308,7 +308,7 @@ YouTube_1.AnchorPoint = Vector2.new(0.5, 0.5)
 YouTube_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
 YouTube_1.BackgroundTransparency = 0.6
 YouTube_1.BorderColor3 = Color3.fromRGB(27,42,53)
-YouTube_1.Position = UDim2.new(0.326000005, 63,0.499000013, 0)
+YouTube_1.Position = UDim2.new(0.325000005, 63,0.499000013, 0)
 YouTube_1.Size = UDim2.new(0, 123,0, 158)
 
 UICorner_12.Parent = YouTube_1
