@@ -116,7 +116,7 @@ local ScriptButton_7 = Instance.new("TextButton")
 
 -- Properties:
 OmegaExecutor.Name = "OmegaExecutor"
-OmegaExecutor.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+OmegaExecutor.Parent = game.CoreGui
 OmegaExecutor.Enabled = true
 
 ToggleGUIHolder_1.Name = "ToggleGUIHolder"
