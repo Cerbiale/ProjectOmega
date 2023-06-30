@@ -1,0 +1,1312 @@
+local Player = game.Players.LocalPlayer
+
+local OmegaExecutor = Instance.new("ScreenGui")
+local ToggleGUIHolder_1 = Instance.new("Frame")
+local UICorner_1 = Instance.new("UICorner")
+local ExtraText_1 = Instance.new("TextLabel")
+local ToggleGUI_1 = Instance.new("TextButton")
+local UIPadding_1 = Instance.new("UIPadding")
+local MainHolder_1 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TabsHolder_1 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TabsHolder_2 = Instance.new("ScrollingFrame")
+local UIPadding_2 = Instance.new("UIPadding")
+local UIListLayout_1 = Instance.new("UIListLayout")
+local HomeTabBtnHolder_1 = Instance.new("Frame")
+local TabBtn_1 = Instance.new("ImageButton")
+local ExecutorTabBtnHolder_1 = Instance.new("Frame")
+local TabBtn_2 = Instance.new("ImageButton")
+local ScriptsTabBtnHolder_1 = Instance.new("Frame")
+local TabBtn_3 = Instance.new("ImageButton")
+local SettingsTabBtnHolder_1 = Instance.new("Frame")
+local TabBtn_4 = Instance.new("ImageButton")
+local CloseBtnHolder_1 = Instance.new("Frame")
+local CloseBtn_1 = Instance.new("TextButton")
+local TopBar_1 = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TitleTxt_1 = Instance.new("TextLabel")
+local UIPadding_3 = Instance.new("UIPadding")
+local GameNameTxt_1 = Instance.new("TextLabel")
+local UIPadding_4 = Instance.new("UIPadding")
+local InBetweenTxt_1 = Instance.new("TextLabel")
+local UIPadding_5 = Instance.new("UIPadding")
+local ElementsHolder_1 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local HomeTab_1 = Instance.new("Frame")
+local DiscordBtnHolder_1 = Instance.new("Frame")
+local DiscordBtn_1 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local YouTubeBtnHolder_1 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local YouTubeBtn_1 = Instance.new("TextButton")
+local HomeTxtHolder_1 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local HomeTxt_1 = Instance.new("TextLabel")
+local UIPadding_6 = Instance.new("UIPadding")
+local ExecutorTab_1 = Instance.new("Frame")
+local ExecutorHolder_1 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local ExecuteTextHolder_1 = Instance.new("TextBox")
+local UIPadding_7 = Instance.new("UIPadding")
+local ClearBtnHolder_1 = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local ClearBtn_1 = Instance.new("TextButton")
+local ExecCBtnHolder_1 = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local ExecCBtn_1 = Instance.new("TextButton")
+local ExecBtnHolder_1 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local ExecBtn_1 = Instance.new("TextButton")
+local SettingsTab_1 = Instance.new("Frame")
+local SettingsHolder_1 = Instance.new("ScrollingFrame")
+local AWalkSpeedHolder_1 = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local WalkSpeedTxt_1 = Instance.new("TextLabel")
+local UIPadding_8 = Instance.new("UIPadding")
+local WalkSpeedInput_1 = Instance.new("TextBox")
+local BJumpPowerHolder_1 = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local JumpPowerTxt_1 = Instance.new("TextLabel")
+local UIPadding_9 = Instance.new("UIPadding")
+local JumpPowerInput_1 = Instance.new("TextBox")
+local CHipHeightHolder_1 = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local HipHeightTxt_1 = Instance.new("TextLabel")
+local UIPadding_10 = Instance.new("UIPadding")
+local HipHeightInput_1 = Instance.new("TextBox")
+local DGravityHolder_1 = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local GravityTxt_1 = Instance.new("TextLabel")
+local UIPadding_11 = Instance.new("UIPadding")
+local GravityInput_1 = Instance.new("TextBox")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local ZLowGraphicsHolder_1 = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local ZLowGraphicsHolder_2 = Instance.new("TextButton")
+local UIPadding_12 = Instance.new("UIPadding")
+local ZAntiKickHolder_1 = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local ZAntiKickBtn_1 = Instance.new("TextButton")
+local ScriptsTab_1 = Instance.new("Frame")
+local ScrollingFrame_1 = Instance.new("ScrollingFrame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local UIPadding_13 = Instance.new("UIPadding")
+local ScriptButtonHolder_1 = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local ScriptButton_1 = Instance.new("TextButton")
+local ScriptButtonHolder_2 = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local ScriptButton_2 = Instance.new("TextButton")
+local ScriptButtonHolder_3 = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
+local ScriptButton_3 = Instance.new("TextButton")
+local ScriptButtonHolder_4 = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+local ScriptButton_4 = Instance.new("TextButton")
+local ScriptButtonHolder_5 = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local ScriptButton_5 = Instance.new("TextButton")
+local ScriptButtonHolder_6 = Instance.new("Frame")
+local UICorner_24 = Instance.new("UICorner")
+local ScriptButton_6 = Instance.new("TextButton")
+local ScriptButtonHolder_7 = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local ScriptButton_7 = Instance.new("TextButton")
+
+-- Properties:
+OmegaExecutor.Name = "OmegaExecutor"
+OmegaExecutor.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+OmegaExecutor.Enabled = true
+
+ToggleGUIHolder_1.Name = "ToggleGUIHolder"
+ToggleGUIHolder_1.Parent = OmegaExecutor
+ToggleGUIHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ToggleGUIHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ToggleGUIHolder_1.BackgroundTransparency = 0.6000000238418579
+ToggleGUIHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+ToggleGUIHolder_1.Position = UDim2.new(0.5, 0,0.100000001, 0)
+ToggleGUIHolder_1.Size = UDim2.new(0, 49,0, 49)
+ToggleGUIHolder_1.Draggable = true
+ToggleGUIHolder_1.Visible = false 
+
+UICorner_1.Parent = ToggleGUIHolder_1
+UICorner_1.CornerRadius = UDim.new(0,10)
+
+ExtraText_1.Name = "ExtraText"
+ExtraText_1.Parent = ToggleGUIHolder_1
+ExtraText_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ExtraText_1.BackgroundTransparency = 1
+ExtraText_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ExtraText_1.BorderSizePixel = 0
+ExtraText_1.Position = UDim2.new(0, 0,0.714285731, 0)
+ExtraText_1.Size = UDim2.new(0, 49,0, 14)
+ExtraText_1.Font = Enum.Font.FredokaOne
+ExtraText_1.Text = "Exec"
+ExtraText_1.TextColor3 = Color3.fromRGB(255,255,255)
+ExtraText_1.TextSize = 14
+
+ToggleGUI_1.Name = "ToggleGUI"
+ToggleGUI_1.Parent = ExtraText_1
+ToggleGUI_1.Active = true
+ToggleGUI_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ToggleGUI_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ToggleGUI_1.BackgroundTransparency = 1
+ToggleGUI_1.BorderColor3 = Color3.fromRGB(27,42,53)
+ToggleGUI_1.BorderSizePixel = 0
+ToggleGUI_1.Position = UDim2.new(0.5, 0,-0.857142806, 0)
+ToggleGUI_1.Size = UDim2.new(0, 49,0, 49)
+ToggleGUI_1.Font = Enum.Font.FredokaOne
+ToggleGUI_1.Text = "Ω"
+ToggleGUI_1.TextColor3 = Color3.fromRGB(0,16,222)
+ToggleGUI_1.TextScaled = true
+ToggleGUI_1.TextSize = 50
+ToggleGUI_1.TextWrapped = true
+ToggleGUI_1.MouseButton1Click:Connect(function()
+	MainHolder_1.Visible = true
+	ToggleGUIHolder_1.Visible = false
+end)
+
+UIPadding_1.Parent = ToggleGUI_1
+UIPadding_1.PaddingBottom = UDim.new(0,7)
+
+MainHolder_1.Name = "MainHolder"
+MainHolder_1.Parent = OmegaExecutor
+MainHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+MainHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+MainHolder_1.BackgroundTransparency = 0.6000000238418579
+MainHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+MainHolder_1.Position = UDim2.new(0.5, 0,0.5, 0)
+MainHolder_1.Size = UDim2.new(0, 319,0, 234)
+MainHolder_1.Draggable = true
+MainHolder_1.Visible = true
+
+UICorner_2.Parent = MainHolder_1
+UICorner_2.CornerRadius = UDim.new(0,10)
+
+TabsHolder_1.Name = "TabsHolder"
+TabsHolder_1.Parent = MainHolder_1
+TabsHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+TabsHolder_1.BackgroundTransparency = 0.6000000238418579
+TabsHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TabsHolder_1.Position = UDim2.new(0.849529803, 0,0.0427350439, 0)
+TabsHolder_1.Size = UDim2.new(0, 39,0, 212)
+
+UICorner_3.Parent = TabsHolder_1
+UICorner_3.CornerRadius = UDim.new(0,10)
+
+TabsHolder_2.Name = "TabsHolder"
+TabsHolder_2.Parent = TabsHolder_1
+TabsHolder_2.Active = true
+TabsHolder_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TabsHolder_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TabsHolder_2.BackgroundTransparency = 1
+TabsHolder_2.BorderColor3 = Color3.fromRGB(27,42,53)
+TabsHolder_2.BorderSizePixel = 0
+TabsHolder_2.Position = UDim2.new(0.5, 0,0.589622617, 0)
+TabsHolder_2.Size = UDim2.new(0, 39,0, 172)
+TabsHolder_2.ClipsDescendants = true
+TabsHolder_2.AutomaticCanvasSize = Enum.AutomaticSize.Y
+TabsHolder_2.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
+TabsHolder_2.CanvasPosition = Vector2.new(0, 0)
+TabsHolder_2.CanvasSize = UDim2.new(0, 0,0.5, 0)
+TabsHolder_2.ElasticBehavior = Enum.ElasticBehavior.Never
+TabsHolder_2.HorizontalScrollBarInset = Enum.ScrollBarInset.None
+TabsHolder_2.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+TabsHolder_2.ScrollBarImageColor3 = Color3.fromRGB(0,0,0)
+TabsHolder_2.ScrollBarImageTransparency = 1
+TabsHolder_2.ScrollBarThickness = 1
+TabsHolder_2.ScrollingDirection = Enum.ScrollingDirection.Y
+TabsHolder_2.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
+TabsHolder_2.VerticalScrollBarInset = Enum.ScrollBarInset.None
+TabsHolder_2.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
+
+UIPadding_2.Parent = TabsHolder_2
+UIPadding_2.PaddingBottom = UDim.new(0,2)
+UIPadding_2.PaddingTop = UDim.new(0,2)
+
+UIListLayout_1.Parent = TabsHolder_2
+UIListLayout_1.Padding = UDim.new(0,7)
+UIListLayout_1.SortOrder = Enum.SortOrder.LayoutOrder
+
+HomeTabBtnHolder_1.Name = "HomeTabBtnHolder"
+HomeTabBtnHolder_1.Parent = TabsHolder_2
+HomeTabBtnHolder_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+HomeTabBtnHolder_1.BackgroundTransparency = 1
+HomeTabBtnHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+HomeTabBtnHolder_1.BorderSizePixel = 0
+HomeTabBtnHolder_1.Size = UDim2.new(0, 39,0, 36)
+
+TabBtn_1.Name = "TabBtn"
+TabBtn_1.Parent = HomeTabBtnHolder_1
+TabBtn_1.AnchorPoint = Vector2.new(0.5, 0.5)
+TabBtn_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+TabBtn_1.BackgroundTransparency = 1
+TabBtn_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TabBtn_1.Position = UDim2.new(0.5, 0,0.5, 0)
+TabBtn_1.Size = UDim2.new(0, 39,0, 36)
+TabBtn_1.Image = "http://www.roblox.com/asset/?id=6026568198"
+TabBtn_1.ImageColor3 = Color3.fromRGB(17, 44, 144)
+TabBtn_1.MouseButton1Click:Connect(function()
+	TabBtn_1.ImageColor3 = Color3.fromRGB(17, 44, 144)
+	TabBtn_2.ImageColor3 = Color3.fromRGB(0,16,222)
+	TabBtn_3.ImageColor3 = Color3.fromRGB(0,16,222)
+	TabBtn_4.ImageColor3 = Color3.fromRGB(0,16,222)
+
+
+	HomeTab_1.Visible = true
+	ExecutorTab_1.Visible = false
+	ScriptsTab_1.Visible = false
+	SettingsTab_1.Visible = false
+end)
+
+ExecutorTabBtnHolder_1.Name = "ExecutorTabBtnHolder"
+ExecutorTabBtnHolder_1.Parent = TabsHolder_2
+ExecutorTabBtnHolder_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ExecutorTabBtnHolder_1.BackgroundTransparency = 1
+ExecutorTabBtnHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+ExecutorTabBtnHolder_1.BorderSizePixel = 0
+ExecutorTabBtnHolder_1.Size = UDim2.new(0, 39,0, 36)
+
+TabBtn_2.Name = "TabBtn"
+TabBtn_2.Parent = ExecutorTabBtnHolder_1
+TabBtn_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TabBtn_2.BackgroundColor3 = Color3.fromRGB(0,0,0)
+TabBtn_2.BackgroundTransparency = 1
+TabBtn_2.BorderColor3 = Color3.fromRGB(27,42,53)
+TabBtn_2.Position = UDim2.new(0.5, 0,0.5, 0)
+TabBtn_2.Size = UDim2.new(0, 39,0, 36)
+TabBtn_2.Image = "http://www.roblox.com/asset/?id=6022668955"
+TabBtn_2.ImageColor3 = Color3.fromRGB(0,16,222)
+TabBtn_2.MouseButton1Click:Connect(function()
+	TabBtn_1.ImageColor3 = Color3.fromRGB(0,16,222)
+	TabBtn_2.ImageColor3 = Color3.fromRGB(17, 44, 144)
+	TabBtn_3.ImageColor3 = Color3.fromRGB(0,16,222)
+	TabBtn_4.ImageColor3 = Color3.fromRGB(0,16,222)
+
+
+	HomeTab_1.Visible = false
+	ExecutorTab_1.Visible = true
+	ScriptsTab_1.Visible = false
+	SettingsTab_1.Visible = false
+end)
+
+ScriptsTabBtnHolder_1.Name = "ScriptsTabBtnHolder"
+ScriptsTabBtnHolder_1.Parent = TabsHolder_2
+ScriptsTabBtnHolder_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ScriptsTabBtnHolder_1.BackgroundTransparency = 1
+ScriptsTabBtnHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+ScriptsTabBtnHolder_1.BorderSizePixel = 0
+ScriptsTabBtnHolder_1.Size = UDim2.new(0, 39,0, 36)
+
+TabBtn_3.Name = "TabBtn"
+TabBtn_3.Parent = ScriptsTabBtnHolder_1
+TabBtn_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TabBtn_3.BackgroundColor3 = Color3.fromRGB(0,0,0)
+TabBtn_3.BackgroundTransparency = 1
+TabBtn_3.BorderColor3 = Color3.fromRGB(27,42,53)
+TabBtn_3.Position = UDim2.new(0.5, 0,0.5, 0)
+TabBtn_3.Size = UDim2.new(0, 39,0, 36)
+TabBtn_3.Image = "http://www.roblox.com/asset/?id=6026568214"
+TabBtn_3.ImageColor3 = Color3.fromRGB(0,16,222)
+TabBtn_3.MouseButton1Click:Connect(function()
+	TabBtn_1.ImageColor3 = Color3.fromRGB(0,16,222)
+	TabBtn_2.ImageColor3 = Color3.fromRGB(0,16,222)
+	TabBtn_3.ImageColor3 = Color3.fromRGB(17, 44, 144)
+	TabBtn_4.ImageColor3 = Color3.fromRGB(0,16,222)
+
+
+	HomeTab_1.Visible = false
+	ExecutorTab_1.Visible = false
+	ScriptsTab_1.Visible = true
+	SettingsTab_1.Visible = false
+end)
+
+SettingsTabBtnHolder_1.Name = "SettingsTabBtnHolder"
+SettingsTabBtnHolder_1.Parent = TabsHolder_2
+SettingsTabBtnHolder_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+SettingsTabBtnHolder_1.BackgroundTransparency = 1
+SettingsTabBtnHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+SettingsTabBtnHolder_1.BorderSizePixel = 0
+SettingsTabBtnHolder_1.Size = UDim2.new(0, 39,0, 36)
+
+TabBtn_4.Name = "TabBtn"
+TabBtn_4.Parent = SettingsTabBtnHolder_1
+TabBtn_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TabBtn_4.BackgroundColor3 = Color3.fromRGB(0,0,0)
+TabBtn_4.BackgroundTransparency = 1
+TabBtn_4.BorderColor3 = Color3.fromRGB(27,42,53)
+TabBtn_4.Position = UDim2.new(0.5, 0,0.5, 0)
+TabBtn_4.Size = UDim2.new(0, 39,0, 36)
+TabBtn_4.Image = "http://www.roblox.com/asset/?id=6031280882"
+TabBtn_4.ImageColor3 = Color3.fromRGB(0,16,222)
+TabBtn_4.MouseButton1Click:Connect(function()
+	TabBtn_1.ImageColor3 = Color3.fromRGB(0,16,222)
+	TabBtn_2.ImageColor3 = Color3.fromRGB(0,16,222)
+	TabBtn_3.ImageColor3 = Color3.fromRGB(0,16,222)
+	TabBtn_4.ImageColor3 = Color3.fromRGB(17, 44, 144)
+
+
+	HomeTab_1.Visible = false
+	ExecutorTab_1.Visible = false
+	ScriptsTab_1.Visible = false
+	SettingsTab_1.Visible = true
+end)
+
+CloseBtnHolder_1.Name = "CloseBtnHolder"
+CloseBtnHolder_1.Parent = TabsHolder_1
+CloseBtnHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+CloseBtnHolder_1.BackgroundTransparency = 1
+CloseBtnHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+CloseBtnHolder_1.Position = UDim2.new(0.0290167388, 0,0.00632980652, 0)
+CloseBtnHolder_1.Size = UDim2.new(0, 37,0, 34)
+
+CloseBtn_1.Name = "CloseBtn"
+CloseBtn_1.Parent = CloseBtnHolder_1
+CloseBtn_1.Active = true
+CloseBtn_1.AnchorPoint = Vector2.new(0.5, 0.5)
+CloseBtn_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+CloseBtn_1.BackgroundTransparency = 1
+CloseBtn_1.BorderColor3 = Color3.fromRGB(27,42,53)
+CloseBtn_1.BorderSizePixel = 0
+CloseBtn_1.Position = UDim2.new(0.5, 0,0.5, 0)
+CloseBtn_1.Size = UDim2.new(0, 39,0, 36)
+CloseBtn_1.Font = Enum.Font.FredokaOne
+CloseBtn_1.Text = "X"
+CloseBtn_1.TextColor3 = Color3.fromRGB(255,255,255)
+CloseBtn_1.TextSize = 36
+CloseBtn_1.MouseButton1Click:Connect(function()
+	MainHolder_1.Visible = false
+	ToggleGUIHolder_1.Visible = true
+end)
+
+TopBar_1.Name = "TopBar"
+TopBar_1.Parent = MainHolder_1
+TopBar_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+TopBar_1.BackgroundTransparency = 0.6000000238418579
+TopBar_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TopBar_1.Position = UDim2.new(0.031347964, 0,0.051282052, 0)
+TopBar_1.Size = UDim2.new(0, 254,0, 30)
+
+UICorner_4.Parent = TopBar_1
+UICorner_4.CornerRadius = UDim.new(0,10)
+
+TitleTxt_1.Name = "TitleTxt"
+TitleTxt_1.Parent = TopBar_1
+TitleTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TitleTxt_1.BackgroundTransparency = 1
+TitleTxt_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TitleTxt_1.BorderSizePixel = 0
+TitleTxt_1.Position = UDim2.new(0, 0,0.13333334, 0)
+TitleTxt_1.Size = UDim2.new(0, 93,0, 22)
+TitleTxt_1.Font = Enum.Font.FredokaOne
+TitleTxt_1.Text = "Project Omega"
+TitleTxt_1.TextColor3 = Color3.fromRGB(0,16,222)
+TitleTxt_1.TextSize = 14
+TitleTxt_1.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_3.Parent = TitleTxt_1
+UIPadding_3.PaddingLeft = UDim.new(0,5)
+
+GameNameTxt_1.Name = "GameNameTxt"
+GameNameTxt_1.Parent = TopBar_1
+GameNameTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+GameNameTxt_1.BackgroundTransparency = 1
+GameNameTxt_1.BorderColor3 = Color3.fromRGB(27,42,53)
+GameNameTxt_1.BorderSizePixel = 0
+GameNameTxt_1.Position = UDim2.new(0.429133862, 0,0.166666672, 0)
+GameNameTxt_1.Size = UDim2.new(0, 140,0, 22)
+GameNameTxt_1.Font = Enum.Font.FredokaOne
+GameNameTxt_1.Text = "Executor"
+GameNameTxt_1.TextColor3 = Color3.fromRGB(255,255,255)
+GameNameTxt_1.TextSize = 14
+GameNameTxt_1.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_4.Parent = GameNameTxt_1
+UIPadding_4.PaddingRight = UDim.new(0,5)
+
+InBetweenTxt_1.Name = "InBetweenTxt"
+InBetweenTxt_1.Parent = TopBar_1
+InBetweenTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+InBetweenTxt_1.BackgroundTransparency = 1
+InBetweenTxt_1.BorderColor3 = Color3.fromRGB(27,42,53)
+InBetweenTxt_1.BorderSizePixel = 0
+InBetweenTxt_1.Position = UDim2.new(0.366141737, 0,0.13333334, 0)
+InBetweenTxt_1.Size = UDim2.new(0, 11,0, 22)
+InBetweenTxt_1.Font = Enum.Font.FredokaOne
+InBetweenTxt_1.Text = "|"
+InBetweenTxt_1.TextColor3 = Color3.fromRGB(255,255,255)
+InBetweenTxt_1.TextSize = 14
+InBetweenTxt_1.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_5.Parent = InBetweenTxt_1
+UIPadding_5.PaddingLeft = UDim.new(0,5)
+
+ElementsHolder_1.Name = "ElementsHolder"
+ElementsHolder_1.Parent = MainHolder_1
+ElementsHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ElementsHolder_1.BackgroundTransparency = 0.6000000238418579
+ElementsHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+ElementsHolder_1.Position = UDim2.new(0.031347964, 0,0.205128208, 0)
+ElementsHolder_1.Size = UDim2.new(0, 254,0, 174)
+
+UICorner_5.Parent = ElementsHolder_1
+UICorner_5.CornerRadius = UDim.new(0,10)
+
+HomeTab_1.Name = "HomeTab"
+HomeTab_1.Parent = ElementsHolder_1
+HomeTab_1.AnchorPoint = Vector2.new(0.5, 0.5)
+HomeTab_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+HomeTab_1.BackgroundTransparency = 1
+HomeTab_1.BorderColor3 = Color3.fromRGB(27,42,53)
+HomeTab_1.Position = UDim2.new(0.5, 0,0.5, 0)
+HomeTab_1.Size = UDim2.new(0, 253,0, 174)
+
+DiscordBtnHolder_1.Name = "DiscordBtnHolder"
+DiscordBtnHolder_1.Parent = HomeTab_1
+DiscordBtnHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+DiscordBtnHolder_1.BackgroundTransparency = 0.6000000238418579
+DiscordBtnHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+DiscordBtnHolder_1.BorderSizePixel = 0
+DiscordBtnHolder_1.Position = UDim2.new(0.0395256914, 0,0.787356317, 0)
+DiscordBtnHolder_1.Size = UDim2.new(0, 112,0, 25)
+
+DiscordBtn_1.Name = "DiscordBtn"
+DiscordBtn_1.Parent = DiscordBtnHolder_1
+DiscordBtn_1.Active = true
+DiscordBtn_1.AnchorPoint = Vector2.new(0.5, 0.5)
+DiscordBtn_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+DiscordBtn_1.BackgroundTransparency = 1
+DiscordBtn_1.BorderColor3 = Color3.fromRGB(0,0,0)
+DiscordBtn_1.BorderSizePixel = 0
+DiscordBtn_1.Position = UDim2.new(0.5, 0,0.5, 0)
+DiscordBtn_1.Size = UDim2.new(0, 112,0, 25)
+DiscordBtn_1.Font = Enum.Font.FredokaOne
+DiscordBtn_1.Text = "Discord"
+DiscordBtn_1.TextColor3 = Color3.fromRGB(0,16,222)
+DiscordBtn_1.TextSize = 16
+DiscordBtn_1.MouseButton1Click:Connect(function()
+	DiscordBtnHolder_1.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	DiscordBtnHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	setclipboard("https://discord.gg/UnjnNVx6Tp")
+end)
+
+UICorner_6.Parent = DiscordBtnHolder_1
+UICorner_6.CornerRadius = UDim.new(0,10)
+
+YouTubeBtnHolder_1.Name = "YouTubeBtnHolder"
+YouTubeBtnHolder_1.Parent = HomeTab_1
+YouTubeBtnHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+YouTubeBtnHolder_1.BackgroundTransparency = 0.6000000238418579
+YouTubeBtnHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+YouTubeBtnHolder_1.BorderSizePixel = 0
+YouTubeBtnHolder_1.Position = UDim2.new(0.513834, 0,0.787356317, 0)
+YouTubeBtnHolder_1.Size = UDim2.new(0, 112,0, 25)
+
+UICorner_7.Parent = YouTubeBtnHolder_1
+UICorner_7.CornerRadius = UDim.new(0,10)
+
+YouTubeBtn_1.Name = "YouTubeBtn"
+YouTubeBtn_1.Parent = YouTubeBtnHolder_1
+YouTubeBtn_1.Active = true
+YouTubeBtn_1.AnchorPoint = Vector2.new(0.5, 0.5)
+YouTubeBtn_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+YouTubeBtn_1.BackgroundTransparency = 1
+YouTubeBtn_1.BorderColor3 = Color3.fromRGB(0,0,0)
+YouTubeBtn_1.BorderSizePixel = 0
+YouTubeBtn_1.Position = UDim2.new(0.49999997, 0,0.5, 0)
+YouTubeBtn_1.Size = UDim2.new(0, 112,0, 25)
+YouTubeBtn_1.Font = Enum.Font.FredokaOne
+YouTubeBtn_1.Text = "YouTube"
+YouTubeBtn_1.TextColor3 = Color3.fromRGB(0,16,222)
+YouTubeBtn_1.TextSize = 16
+YouTubeBtn_1.MouseButton1Click:Connect(function()
+	YouTubeBtnHolder_1.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	YouTubeBtnHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	setclipboard("https://www.youtube.com/channel/UCIx5z7_DSzgYUR8oBf6x57w")
+end)
+
+HomeTxtHolder_1.Name = "HomeTxtHolder"
+HomeTxtHolder_1.Parent = HomeTab_1
+HomeTxtHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+HomeTxtHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+HomeTxtHolder_1.BackgroundTransparency = 0.6000000238418579
+HomeTxtHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+HomeTxtHolder_1.Position = UDim2.new(0.499011844, 0,0.393678159, 0)
+HomeTxtHolder_1.Size = UDim2.new(0, 232,0, 112)
+
+UICorner_8.Parent = HomeTxtHolder_1
+UICorner_8.CornerRadius = UDim.new(0,10)
+
+HomeTxt_1.Name = "HomeTxt"
+HomeTxt_1.Parent = HomeTxtHolder_1
+HomeTxt_1.AnchorPoint = Vector2.new(0.5, 0.5)
+HomeTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+HomeTxt_1.BackgroundTransparency = 1
+HomeTxt_1.BorderColor3 = Color3.fromRGB(0,0,0)
+HomeTxt_1.BorderSizePixel = 0
+HomeTxt_1.Position = UDim2.new(0.5, 0,0.5, 0)
+HomeTxt_1.Size = UDim2.new(0, 232,0, 112)
+HomeTxt_1.Font = Enum.Font.FredokaOne
+HomeTxt_1.Text = "Project Omega | Executor, is an Roblox mobile executor which can be used to execute scripts in alot of games on the platform. Make sure to join the Discord, and subscribe to my channel!"
+HomeTxt_1.TextColor3 = Color3.fromRGB(255,255,255)
+HomeTxt_1.TextSize = 16
+HomeTxt_1.TextWrapped = true
+HomeTxt_1.TextYAlignment = Enum.TextYAlignment.Top
+
+UIPadding_6.Parent = HomeTxt_1
+UIPadding_6.PaddingBottom = UDim.new(0,6)
+UIPadding_6.PaddingLeft = UDim.new(0,6)
+UIPadding_6.PaddingRight = UDim.new(0,6)
+UIPadding_6.PaddingTop = UDim.new(0,6)
+
+ExecutorTab_1.Name = "ExecutorTab"
+ExecutorTab_1.Parent = ElementsHolder_1
+ExecutorTab_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ExecutorTab_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ExecutorTab_1.BackgroundTransparency = 1
+ExecutorTab_1.BorderColor3 = Color3.fromRGB(27,42,53)
+ExecutorTab_1.Position = UDim2.new(0.5, 0,0.5, 0)
+ExecutorTab_1.Size = UDim2.new(0, 253,0, 174)
+ExecutorTab_1.Visible = false
+
+ExecutorHolder_1.Name = "ExecutorHolder"
+ExecutorHolder_1.Parent = ExecutorTab_1
+ExecutorHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ExecutorHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ExecutorHolder_1.BackgroundTransparency = 0.6000000238418579
+ExecutorHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+ExecutorHolder_1.Position = UDim2.new(0.499011844, 0,0.393678159, 0)
+ExecutorHolder_1.Size = UDim2.new(0, 232,0, 112)
+
+UICorner_9.Parent = ExecutorHolder_1
+UICorner_9.CornerRadius = UDim.new(0,10)
+
+ExecuteTextHolder_1.Name = "ExecuteTextHolder"
+ExecuteTextHolder_1.Parent = ExecutorHolder_1
+ExecuteTextHolder_1.Active = true
+ExecuteTextHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ExecuteTextHolder_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ExecuteTextHolder_1.BackgroundTransparency = 1
+ExecuteTextHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ExecuteTextHolder_1.BorderSizePixel = 0
+ExecuteTextHolder_1.Position = UDim2.new(0.5, 0,0.5, 0)
+ExecuteTextHolder_1.ShowNativeInput = false
+ExecuteTextHolder_1.Size = UDim2.new(0, 232,0, 112)
+ExecuteTextHolder_1.ClipsDescendants = true
+ExecuteTextHolder_1.Font = Enum.Font.FredokaOne
+ExecuteTextHolder_1.PlaceholderColor3 = Color3.fromRGB(255,255,255)
+ExecuteTextHolder_1.PlaceholderText = ""
+ExecuteTextHolder_1.Text = ""
+ExecuteTextHolder_1.TextColor3 = Color3.fromRGB(255,255,255)
+ExecuteTextHolder_1.TextSize = 14
+ExecuteTextHolder_1.TextWrapped = true
+ExecuteTextHolder_1.TextXAlignment = Enum.TextXAlignment.Left
+ExecuteTextHolder_1.TextYAlignment = Enum.TextYAlignment.Top
+
+UIPadding_7.Parent = ExecuteTextHolder_1
+UIPadding_7.PaddingLeft = UDim.new(0,6)
+UIPadding_7.PaddingTop = UDim.new(0,6)
+
+ClearBtnHolder_1.Name = "ClearBtnHolder"
+ClearBtnHolder_1.Parent = ExecutorTab_1
+ClearBtnHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ClearBtnHolder_1.BackgroundTransparency = 0.6000000238418579
+ClearBtnHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ClearBtnHolder_1.BorderSizePixel = 0
+ClearBtnHolder_1.Position = UDim2.new(0.0395256914, 0,0.787356317, 0)
+ClearBtnHolder_1.Size = UDim2.new(0, 72,0, 25)
+
+UICorner_10.Parent = ClearBtnHolder_1
+UICorner_10.CornerRadius = UDim.new(0,10)
+
+ClearBtn_1.Name = "ClearBtn"
+ClearBtn_1.Parent = ClearBtnHolder_1
+ClearBtn_1.Active = true
+ClearBtn_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ClearBtn_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ClearBtn_1.BackgroundTransparency = 1
+ClearBtn_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ClearBtn_1.BorderSizePixel = 0
+ClearBtn_1.Position = UDim2.new(0.516369045, 0,0.5, 0)
+ClearBtn_1.Size = UDim2.new(0, 72,0, 25)
+ClearBtn_1.Font = Enum.Font.FredokaOne
+ClearBtn_1.Text = "Clear"
+ClearBtn_1.TextColor3 = Color3.fromRGB(0,16,222)
+ClearBtn_1.TextSize = 16
+ClearBtn_1.MouseButton1Click:Connect(function()
+	ClearBtnHolder_1.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	ClearBtnHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	ExecuteTextHolder_1.Text = ""
+end)
+
+ExecCBtnHolder_1.Name = "ExecCBtnHolder"
+ExecCBtnHolder_1.Parent = ExecutorTab_1
+ExecCBtnHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ExecCBtnHolder_1.BackgroundTransparency = 0.6000000238418579
+ExecCBtnHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ExecCBtnHolder_1.BorderSizePixel = 0
+ExecCBtnHolder_1.Position = UDim2.new(0.355731219, 0,0.787356317, 0)
+ExecCBtnHolder_1.Size = UDim2.new(0, 72,0, 25)
+
+UICorner_11.Parent = ExecCBtnHolder_1
+UICorner_11.CornerRadius = UDim.new(0,10)
+
+ExecCBtn_1.Name = "ExecCBtn"
+ExecCBtn_1.Parent = ExecCBtnHolder_1
+ExecCBtn_1.Active = true
+ExecCBtn_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ExecCBtn_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ExecCBtn_1.BackgroundTransparency = 1
+ExecCBtn_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ExecCBtn_1.BorderSizePixel = 0
+ExecCBtn_1.Position = UDim2.new(0.488591254, 0,0.5, 0)
+ExecCBtn_1.Size = UDim2.new(0, 72,0, 25)
+ExecCBtn_1.Font = Enum.Font.FredokaOne
+ExecCBtn_1.Text = "Clipboard"
+ExecCBtn_1.TextColor3 = Color3.fromRGB(0,16,222)
+ExecCBtn_1.TextSize = 16
+ExecCBtn_1.MouseButton1Click:Connect(function()
+	ExecCBtnHolder_1.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	ExecCBtnHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	loadstring(getclipboard())()
+end)
+
+ExecBtnHolder_1.Name = "ExecBtnHolder"
+ExecBtnHolder_1.Parent = ExecutorTab_1
+ExecBtnHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ExecBtnHolder_1.BackgroundTransparency = 0.6000000238418579
+ExecBtnHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ExecBtnHolder_1.BorderSizePixel = 0
+ExecBtnHolder_1.Position = UDim2.new(0.67193675, 0,0.787356317, 0)
+ExecBtnHolder_1.Size = UDim2.new(0, 72,0, 25)
+
+UICorner_12.Parent = ExecBtnHolder_1
+UICorner_12.CornerRadius = UDim.new(0,10)
+
+ExecBtn_1.Name = "ExecBtn"
+ExecBtn_1.Parent = ExecBtnHolder_1
+ExecBtn_1.Active = true
+ExecBtn_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ExecBtn_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ExecBtn_1.BackgroundTransparency = 1
+ExecBtn_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ExecBtn_1.BorderSizePixel = 0
+ExecBtn_1.Position = UDim2.new(0.488591284, 0,0.50000006, 0)
+ExecBtn_1.Size = UDim2.new(0, 72,0, 25)
+ExecBtn_1.Font = Enum.Font.FredokaOne
+ExecBtn_1.Text = "Execute"
+ExecBtn_1.TextColor3 = Color3.fromRGB(0,16,222)
+ExecBtn_1.TextSize = 16
+ExecBtn_1.MouseButton1Click:Connect(function()
+	ExecBtnHolder_1.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	ExecBtnHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	ExecBtn_1.MouseButton1Click:Connect(function()
+		local Success, Error = pcall(function()
+			loadstring(tostring(ExecuteTextHolder_1.Text))()
+		end)
+
+		if Success then
+			print("Code ran succesfully")
+		else
+			assert(false, Error)
+		end
+	end)
+end)
+
+SettingsTab_1.Name = "SettingsTab"
+SettingsTab_1.Parent = ElementsHolder_1
+SettingsTab_1.AnchorPoint = Vector2.new(0.5, 0.5)
+SettingsTab_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+SettingsTab_1.BackgroundTransparency = 1
+SettingsTab_1.BorderColor3 = Color3.fromRGB(27,42,53)
+SettingsTab_1.Position = UDim2.new(0.5, 0,0.5, 0)
+SettingsTab_1.Size = UDim2.new(0, 253,0, 174)
+SettingsTab_1.Visible = false
+
+SettingsHolder_1.Name = "SettingsHolder"
+SettingsHolder_1.Parent = SettingsTab_1
+SettingsHolder_1.Active = true
+SettingsHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+SettingsHolder_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+SettingsHolder_1.BackgroundTransparency = 1
+SettingsHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+SettingsHolder_1.BorderSizePixel = 0
+SettingsHolder_1.Position = UDim2.new(0.5, 0,0.5, 0)
+SettingsHolder_1.Size = UDim2.new(0, 253,0, 174)
+SettingsHolder_1.ClipsDescendants = true
+SettingsHolder_1.AutomaticCanvasSize = Enum.AutomaticSize.Y
+SettingsHolder_1.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
+SettingsHolder_1.CanvasPosition = Vector2.new(0, 0)
+SettingsHolder_1.CanvasSize = UDim2.new(0, 0,0.5, 0)
+SettingsHolder_1.ElasticBehavior = Enum.ElasticBehavior.Never
+SettingsHolder_1.HorizontalScrollBarInset = Enum.ScrollBarInset.None
+SettingsHolder_1.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+SettingsHolder_1.ScrollBarImageColor3 = Color3.fromRGB(0,0,0)
+SettingsHolder_1.ScrollBarImageTransparency = 1
+SettingsHolder_1.ScrollBarThickness = 1
+SettingsHolder_1.ScrollingDirection = Enum.ScrollingDirection.XY
+SettingsHolder_1.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
+SettingsHolder_1.VerticalScrollBarInset = Enum.ScrollBarInset.None
+SettingsHolder_1.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
+
+AWalkSpeedHolder_1.Name = "AWalkSpeedHolder"
+AWalkSpeedHolder_1.Parent = SettingsHolder_1
+AWalkSpeedHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+AWalkSpeedHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+AWalkSpeedHolder_1.BackgroundTransparency = 0.6000000238418579
+AWalkSpeedHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+AWalkSpeedHolder_1.Position = UDim2.new(0.499011844, 0,0.148706898, 0)
+AWalkSpeedHolder_1.Size = UDim2.new(0, 232,0, 26)
+
+UICorner_13.Parent = AWalkSpeedHolder_1
+UICorner_13.CornerRadius = UDim.new(0,10)
+
+WalkSpeedTxt_1.Name = "WalkSpeedTxt"
+WalkSpeedTxt_1.Parent = AWalkSpeedHolder_1
+WalkSpeedTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+WalkSpeedTxt_1.BackgroundTransparency = 1
+WalkSpeedTxt_1.BorderColor3 = Color3.fromRGB(0,0,0)
+WalkSpeedTxt_1.BorderSizePixel = 0
+WalkSpeedTxt_1.Position = UDim2.new(0, 0,0.0909095183, 0)
+WalkSpeedTxt_1.Size = UDim2.new(0, 158,0, 20)
+WalkSpeedTxt_1.Font = Enum.Font.FredokaOne
+WalkSpeedTxt_1.Text = "Walk Speed"
+WalkSpeedTxt_1.TextColor3 = Color3.fromRGB(0,16,222)
+WalkSpeedTxt_1.TextSize = 14
+WalkSpeedTxt_1.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_8.Parent = WalkSpeedTxt_1
+UIPadding_8.PaddingLeft = UDim.new(0,7)
+
+WalkSpeedInput_1.Name = "WalkSpeedInput"
+WalkSpeedInput_1.Parent = AWalkSpeedHolder_1
+WalkSpeedInput_1.Active = true
+WalkSpeedInput_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+WalkSpeedInput_1.BackgroundTransparency = 1
+WalkSpeedInput_1.BorderColor3 = Color3.fromRGB(0,0,0)
+WalkSpeedInput_1.BorderSizePixel = 0
+WalkSpeedInput_1.CursorPosition = -1
+WalkSpeedInput_1.Position = UDim2.new(0.681034505, 0,0.0909095183, 0)
+WalkSpeedInput_1.Size = UDim2.new(0, 74,0, 20)
+WalkSpeedInput_1.Font = Enum.Font.FredokaOne
+WalkSpeedInput_1.PlaceholderColor3 = Color3.fromRGB(255,255,255)
+WalkSpeedInput_1.PlaceholderText = ""
+WalkSpeedInput_1.Text = ""
+WalkSpeedInput_1.TextColor3 = Color3.fromRGB(255,255,255)
+WalkSpeedInput_1.TextSize = 13
+WalkSpeedInput_1.FocusLost:Connect(function(enterpressed)  
+	if enterpressed then  
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (WalkSpeedInput_1.Text)  
+	end  
+end) 
+
+BJumpPowerHolder_1.Name = "BJumpPowerHolder"
+BJumpPowerHolder_1.Parent = SettingsHolder_1
+BJumpPowerHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+BJumpPowerHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+BJumpPowerHolder_1.BackgroundTransparency = 0.6000000238418579
+BJumpPowerHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+BJumpPowerHolder_1.Position = UDim2.new(0.499000013, 0,0.330000013, 0)
+BJumpPowerHolder_1.Size = UDim2.new(0, 232,0, 26)
+
+UICorner_14.Parent = BJumpPowerHolder_1
+UICorner_14.CornerRadius = UDim.new(0,10)
+
+JumpPowerTxt_1.Name = "JumpPowerTxt"
+JumpPowerTxt_1.Parent = BJumpPowerHolder_1
+JumpPowerTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+JumpPowerTxt_1.BackgroundTransparency = 1
+JumpPowerTxt_1.BorderColor3 = Color3.fromRGB(0,0,0)
+JumpPowerTxt_1.BorderSizePixel = 0
+JumpPowerTxt_1.Position = UDim2.new(0, 0,0.0909095183, 0)
+JumpPowerTxt_1.Size = UDim2.new(0, 158,0, 20)
+JumpPowerTxt_1.Font = Enum.Font.FredokaOne
+JumpPowerTxt_1.Text = "Jump Power"
+JumpPowerTxt_1.TextColor3 = Color3.fromRGB(0,16,222)
+JumpPowerTxt_1.TextSize = 14
+JumpPowerTxt_1.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_9.Parent = JumpPowerTxt_1
+UIPadding_9.PaddingLeft = UDim.new(0,7)
+
+JumpPowerInput_1.Name = "JumpPowerInput"
+JumpPowerInput_1.Parent = BJumpPowerHolder_1
+JumpPowerInput_1.Active = true
+JumpPowerInput_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+JumpPowerInput_1.BackgroundTransparency = 1
+JumpPowerInput_1.BorderColor3 = Color3.fromRGB(0,0,0)
+JumpPowerInput_1.BorderSizePixel = 0
+JumpPowerInput_1.CursorPosition = -1
+JumpPowerInput_1.Position = UDim2.new(0.681034505, 0,0.0909095183, 0)
+JumpPowerInput_1.Size = UDim2.new(0, 74,0, 20)
+JumpPowerInput_1.Font = Enum.Font.FredokaOne
+JumpPowerInput_1.PlaceholderColor3 = Color3.fromRGB(255,255,255)
+JumpPowerInput_1.PlaceholderText = ""
+JumpPowerInput_1.Text = ""
+JumpPowerInput_1.TextColor3 = Color3.fromRGB(255,255,255)
+JumpPowerInput_1.TextSize = 13
+JumpPowerInput_1.FocusLost:Connect(function(enterpressed)  
+	if enterpressed then  
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = (JumpPowerInput_1.Text)  
+	end  
+end) 
+
+CHipHeightHolder_1.Name = "CHipHeightHolder"
+CHipHeightHolder_1.Parent = SettingsHolder_1
+CHipHeightHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+CHipHeightHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+CHipHeightHolder_1.BackgroundTransparency = 0.6000000238418579
+CHipHeightHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+CHipHeightHolder_1.Position = UDim2.new(0.499000013, 0,0.50999999, 0)
+CHipHeightHolder_1.Size = UDim2.new(0, 232,0, 26)
+
+UICorner_15.Parent = CHipHeightHolder_1
+UICorner_15.CornerRadius = UDim.new(0,10)
+
+HipHeightTxt_1.Name = "HipHeightTxt"
+HipHeightTxt_1.Parent = CHipHeightHolder_1
+HipHeightTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+HipHeightTxt_1.BackgroundTransparency = 1
+HipHeightTxt_1.BorderColor3 = Color3.fromRGB(0,0,0)
+HipHeightTxt_1.BorderSizePixel = 0
+HipHeightTxt_1.Position = UDim2.new(0, 0,0.0909095183, 0)
+HipHeightTxt_1.Size = UDim2.new(0, 158,0, 20)
+HipHeightTxt_1.Font = Enum.Font.FredokaOne
+HipHeightTxt_1.Text = "Hip Height"
+HipHeightTxt_1.TextColor3 = Color3.fromRGB(0,16,222)
+HipHeightTxt_1.TextSize = 14
+HipHeightTxt_1.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_10.Parent = HipHeightTxt_1
+UIPadding_10.PaddingLeft = UDim.new(0,7)
+
+HipHeightInput_1.Name = "HipHeightInput"
+HipHeightInput_1.Parent = CHipHeightHolder_1
+HipHeightInput_1.Active = true
+HipHeightInput_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+HipHeightInput_1.BackgroundTransparency = 1
+HipHeightInput_1.BorderColor3 = Color3.fromRGB(0,0,0)
+HipHeightInput_1.BorderSizePixel = 0
+HipHeightInput_1.CursorPosition = -1
+HipHeightInput_1.Position = UDim2.new(0.681034505, 0,0.0909095183, 0)
+HipHeightInput_1.Size = UDim2.new(0, 74,0, 20)
+HipHeightInput_1.Font = Enum.Font.FredokaOne
+HipHeightInput_1.PlaceholderColor3 = Color3.fromRGB(255,255,255)
+HipHeightInput_1.PlaceholderText = ""
+HipHeightInput_1.Text = ""
+HipHeightInput_1.TextColor3 = Color3.fromRGB(255,255,255)
+HipHeightInput_1.TextSize = 13
+HipHeightInput_1.FocusLost:Connect(function(enterpressed)  
+	if enterpressed then  
+		game.Players.LocalPlayer.Character.Humanoid.HipHeight = (HipHeightInput_1.Text)  
+	end  
+end) 
+
+DGravityHolder_1.Name = "DGravityHolder"
+DGravityHolder_1.Parent = SettingsHolder_1
+DGravityHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+DGravityHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+DGravityHolder_1.BackgroundTransparency = 0.6000000238418579
+DGravityHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+DGravityHolder_1.Position = UDim2.new(0.499000013, 0,0.688160896, 0)
+DGravityHolder_1.Size = UDim2.new(0, 232,0, 26)
+
+UICorner_16.Parent = DGravityHolder_1
+UICorner_16.CornerRadius = UDim.new(0,10)
+
+GravityTxt_1.Name = "GravityTxt"
+GravityTxt_1.Parent = DGravityHolder_1
+GravityTxt_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+GravityTxt_1.BackgroundTransparency = 1
+GravityTxt_1.BorderColor3 = Color3.fromRGB(0,0,0)
+GravityTxt_1.BorderSizePixel = 0
+GravityTxt_1.Position = UDim2.new(0, 0,0.0909095183, 0)
+GravityTxt_1.Size = UDim2.new(0, 158,0, 20)
+GravityTxt_1.Font = Enum.Font.FredokaOne
+GravityTxt_1.Text = "Gravity"
+GravityTxt_1.TextColor3 = Color3.fromRGB(0,16,222)
+GravityTxt_1.TextSize = 14
+GravityTxt_1.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding_11.Parent = GravityTxt_1
+UIPadding_11.PaddingLeft = UDim.new(0,7)
+
+GravityInput_1.Name = "GravityInput"
+GravityInput_1.Parent = DGravityHolder_1
+GravityInput_1.Active = true
+GravityInput_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+GravityInput_1.BackgroundTransparency = 1
+GravityInput_1.BorderColor3 = Color3.fromRGB(0,0,0)
+GravityInput_1.BorderSizePixel = 0
+GravityInput_1.CursorPosition = -1
+GravityInput_1.Position = UDim2.new(0.681034505, 0,0.0909095183, 0)
+GravityInput_1.Size = UDim2.new(0, 74,0, 20)
+GravityInput_1.Font = Enum.Font.FredokaOne
+GravityInput_1.PlaceholderColor3 = Color3.fromRGB(255,255,255)
+GravityInput_1.PlaceholderText = ""
+GravityInput_1.Text = ""
+GravityInput_1.TextColor3 = Color3.fromRGB(255,255,255)
+GravityInput_1.TextSize = 13
+GravityInput_1.FocusLost:Connect(function(enterpressed)  
+	if enterpressed then  
+		game.Workspace.Gravity = (GravityInput_1.Text)  
+	end  
+end) 
+
+UIListLayout_2.Parent = SettingsHolder_1
+UIListLayout_2.Padding = UDim.new(0,5)
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.Name
+
+ZLowGraphicsHolder_1.Name = "ZLowGraphicsHolder"
+ZLowGraphicsHolder_1.Parent = SettingsHolder_1
+ZLowGraphicsHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ZLowGraphicsHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ZLowGraphicsHolder_1.BackgroundTransparency = 0.6000000238418579
+ZLowGraphicsHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+ZLowGraphicsHolder_1.Position = UDim2.new(0.499011844, 0,0.860632181, 0)
+ZLowGraphicsHolder_1.Size = UDim2.new(0, 232,0, 20)
+
+UICorner_17.Parent = ZLowGraphicsHolder_1
+UICorner_17.CornerRadius = UDim.new(0,10)
+
+ZLowGraphicsHolder_2.Name = "ZLowGraphicsHolder"
+ZLowGraphicsHolder_2.Parent = ZLowGraphicsHolder_1
+ZLowGraphicsHolder_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ZLowGraphicsHolder_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ZLowGraphicsHolder_2.BackgroundTransparency = 1
+ZLowGraphicsHolder_2.BorderColor3 = Color3.fromRGB(0,0,0)
+ZLowGraphicsHolder_2.BorderSizePixel = 0
+ZLowGraphicsHolder_2.Position = UDim2.new(0.499993682, 0,0.483716577, 0)
+ZLowGraphicsHolder_2.Size = UDim2.new(0, 231,0, 14)
+ZLowGraphicsHolder_2.Font = Enum.Font.FredokaOne
+ZLowGraphicsHolder_2.Text = "Low Graphics"
+ZLowGraphicsHolder_2.TextColor3 = Color3.fromRGB(0,16,222)
+ZLowGraphicsHolder_2.TextSize = 14
+ZLowGraphicsHolder_2.MouseButton1Click:Connect(function()
+	ZLowGraphicsHolder_1.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	ZLowGraphicsHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	loadstring(game:HttpGet("https://pastebin.com/raw/8QZGBLW8"))()  
+end)
+
+UIPadding_12.Parent = SettingsHolder_1
+UIPadding_12.PaddingBottom = UDim.new(0,7)
+UIPadding_12.PaddingTop = UDim.new(0,7)
+
+ZAntiKickHolder_1.Name = "ZAntiKickHolder"
+ZAntiKickHolder_1.Parent = SettingsHolder_1
+ZAntiKickHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ZAntiKickHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ZAntiKickHolder_1.BackgroundTransparency = 0.6000000238418579
+ZAntiKickHolder_1.BorderColor3 = Color3.fromRGB(27,42,53)
+ZAntiKickHolder_1.Position = UDim2.new(0.499011844, 0,0.860632181, 0)
+ZAntiKickHolder_1.Size = UDim2.new(0, 232,0, 20)
+
+UICorner_18.Parent = ZAntiKickHolder_1
+UICorner_18.CornerRadius = UDim.new(0,10)
+
+ZAntiKickBtn_1.Name = "ZAntiKickBtn"
+ZAntiKickBtn_1.Parent = ZAntiKickHolder_1
+ZAntiKickBtn_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ZAntiKickBtn_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ZAntiKickBtn_1.BackgroundTransparency = 1
+ZAntiKickBtn_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ZAntiKickBtn_1.BorderSizePixel = 0
+ZAntiKickBtn_1.Position = UDim2.new(0.499993593, 0,0.467424005, 0)
+ZAntiKickBtn_1.Size = UDim2.new(0, 231,0, 14)
+ZAntiKickBtn_1.Font = Enum.Font.FredokaOne
+ZAntiKickBtn_1.Text = "Anti Kick"
+ZAntiKickBtn_1.TextColor3 = Color3.fromRGB(0,16,222)
+ZAntiKickBtn_1.TextSize = 14
+ZAntiKickBtn_1.MouseButton1Click:Connect(function()
+	ZAntiKickHolder_1.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	ZAntiKickHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	local VirtualUser = game:GetService('VirtualUser')
+	game:GetService('Players').LocalPlayer.Idled:connect(function()
+		VirtualUser:CaptureController()
+		VirtualUser:ClickButton2(Vector2.new())
+	end)
+	print("ANTI AFK ENABLED")
+end)
+
+ScriptsTab_1.Name = "ScriptsTab"
+ScriptsTab_1.Parent = ElementsHolder_1
+ScriptsTab_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptsTab_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ScriptsTab_1.BackgroundTransparency = 1
+ScriptsTab_1.BorderColor3 = Color3.fromRGB(27,42,53)
+ScriptsTab_1.Position = UDim2.new(0.5, 0,0.5, 0)
+ScriptsTab_1.Size = UDim2.new(0, 253,0, 174)
+ScriptsTab_1.Visible = false
+
+ScrollingFrame_1.Name = "ScrollingFrame"
+ScrollingFrame_1.Parent = ScriptsTab_1
+ScrollingFrame_1.Active = true
+ScrollingFrame_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ScrollingFrame_1.BackgroundTransparency = 1
+ScrollingFrame_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ScrollingFrame_1.BorderSizePixel = 0
+ScrollingFrame_1.Size = UDim2.new(0, 254,0, 172)
+ScrollingFrame_1.ClipsDescendants = true
+ScrollingFrame_1.AutomaticCanvasSize = Enum.AutomaticSize.Y
+ScrollingFrame_1.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
+ScrollingFrame_1.CanvasPosition = Vector2.new(0, 0)
+ScrollingFrame_1.CanvasSize = UDim2.new(0, 0,0.5, 0)
+ScrollingFrame_1.ElasticBehavior = Enum.ElasticBehavior.Never
+ScrollingFrame_1.HorizontalScrollBarInset = Enum.ScrollBarInset.None
+ScrollingFrame_1.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+ScrollingFrame_1.ScrollBarImageColor3 = Color3.fromRGB(0,0,0)
+ScrollingFrame_1.ScrollBarImageTransparency = 1
+ScrollingFrame_1.ScrollBarThickness = 1
+ScrollingFrame_1.ScrollingDirection = Enum.ScrollingDirection.Y
+ScrollingFrame_1.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
+ScrollingFrame_1.VerticalScrollBarInset = Enum.ScrollBarInset.None
+ScrollingFrame_1.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
+
+UIListLayout_3.Parent = ScrollingFrame_1
+UIListLayout_3.Padding = UDim.new(0,6)
+UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+
+UIPadding_13.Parent = ScrollingFrame_1
+UIPadding_13.PaddingBottom = UDim.new(0,8)
+UIPadding_13.PaddingTop = UDim.new(0,8)
+
+ScriptButtonHolder_1.Name = "ScriptButtonHolder"
+ScriptButtonHolder_1.Parent = ScrollingFrame_1
+ScriptButtonHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_1.BackgroundTransparency = 0.6000000238418579
+ScriptButtonHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_1.BorderSizePixel = 0
+ScriptButtonHolder_1.Position = UDim2.new(0.265748024, 0,0.0465116277, 0)
+ScriptButtonHolder_1.Size = UDim2.new(0, 232,0, 27)
+
+UICorner_19.Parent = ScriptButtonHolder_1
+UICorner_19.CornerRadius = UDim.new(0,10)
+
+ScriptButton_1.Name = "ScriptButton"
+ScriptButton_1.Parent = ScriptButtonHolder_1
+ScriptButton_1.Active = true
+ScriptButton_1.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptButton_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ScriptButton_1.BackgroundTransparency = 1
+ScriptButton_1.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButton_1.BorderSizePixel = 0
+ScriptButton_1.Position = UDim2.new(0.5, 0,0.5, 0)
+ScriptButton_1.Size = UDim2.new(0, 232,0, 27)
+ScriptButton_1.Font = Enum.Font.FredokaOne
+ScriptButton_1.Text = "Infinite Yield"
+ScriptButton_1.TextColor3 = Color3.fromRGB(0,16,222)
+ScriptButton_1.TextSize = 14
+ScriptButton_1.MouseButton1Click:Connect(function()
+	ScriptButtonHolder_1.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	ScriptButtonHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+ScriptButtonHolder_2.Name = "ScriptButtonHolder"
+ScriptButtonHolder_2.Parent = ScrollingFrame_1
+ScriptButtonHolder_2.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_2.BackgroundTransparency = 0.6000000238418579
+ScriptButtonHolder_2.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_2.BorderSizePixel = 0
+ScriptButtonHolder_2.Position = UDim2.new(0.265748024, 0,0.0465116277, 0)
+ScriptButtonHolder_2.Size = UDim2.new(0, 232,0, 27)
+
+UICorner_20.Parent = ScriptButtonHolder_2
+UICorner_20.CornerRadius = UDim.new(0,10)
+
+ScriptButton_2.Name = "ScriptButton"
+ScriptButton_2.Parent = ScriptButtonHolder_2
+ScriptButton_2.Active = true
+ScriptButton_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptButton_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ScriptButton_2.BackgroundTransparency = 1
+ScriptButton_2.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButton_2.BorderSizePixel = 0
+ScriptButton_2.Position = UDim2.new(0.5, 0,0.5, 0)
+ScriptButton_2.Size = UDim2.new(0, 232,0, 27)
+ScriptButton_2.Font = Enum.Font.FredokaOne
+ScriptButton_2.Text = "Mobile Fly"
+ScriptButton_2.TextColor3 = Color3.fromRGB(0,16,222)
+ScriptButton_2.TextSize = 14
+ScriptButton_2.MouseButton1Click:Connect(function()
+	ScriptButtonHolder_2.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	ScriptButtonHolder_2.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+end)
+
+ScriptButtonHolder_3.Name = "ScriptButtonHolder"
+ScriptButtonHolder_3.Parent = ScrollingFrame_1
+ScriptButtonHolder_3.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_3.BackgroundTransparency = 0.6000000238418579
+ScriptButtonHolder_3.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_3.BorderSizePixel = 0
+ScriptButtonHolder_3.Position = UDim2.new(0.265748024, 0,0.0465116277, 0)
+ScriptButtonHolder_3.Size = UDim2.new(0, 232,0, 27)
+
+UICorner_21.Parent = ScriptButtonHolder_3
+UICorner_21.CornerRadius = UDim.new(0,10)
+
+ScriptButton_3.Name = "ScriptButton"
+ScriptButton_3.Parent = ScriptButtonHolder_3
+ScriptButton_3.Active = true
+ScriptButton_3.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptButton_3.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ScriptButton_3.BackgroundTransparency = 1
+ScriptButton_3.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButton_3.BorderSizePixel = 0
+ScriptButton_3.Position = UDim2.new(0.5, 0,0.5, 0)
+ScriptButton_3.Size = UDim2.new(0, 232,0, 27)
+ScriptButton_3.Font = Enum.Font.FredokaOne
+ScriptButton_3.Text = "Coordinates"
+ScriptButton_3.TextColor3 = Color3.fromRGB(0,16,222)
+ScriptButton_3.TextSize = 14
+ScriptButton_3.MouseButton1Click:Connect(function()
+	ScriptButtonHolder_3.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	ScriptButtonHolder_3.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	loadstring(game:HttpGet('https://pastebin.com/raw/sQBuVqQB'))()
+end)
+
+ScriptButtonHolder_4.Name = "ScriptButtonHolder"
+ScriptButtonHolder_4.Parent = ScrollingFrame_1
+ScriptButtonHolder_4.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_4.BackgroundTransparency = 0.6000000238418579
+ScriptButtonHolder_4.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_4.BorderSizePixel = 0
+ScriptButtonHolder_4.Position = UDim2.new(0.265748024, 0,0.0465116277, 0)
+ScriptButtonHolder_4.Size = UDim2.new(0, 232,0, 27)
+
+UICorner_22.Parent = ScriptButtonHolder_4
+UICorner_22.CornerRadius = UDim.new(0,10)
+
+ScriptButton_4.Name = "ScriptButton"
+ScriptButton_4.Parent = ScriptButtonHolder_4
+ScriptButton_4.Active = true
+ScriptButton_4.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptButton_4.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ScriptButton_4.BackgroundTransparency = 1
+ScriptButton_4.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButton_4.BorderSizePixel = 0
+ScriptButton_4.Position = UDim2.new(0.5, 0,0.5, 0)
+ScriptButton_4.Size = UDim2.new(0, 232,0, 27)
+ScriptButton_4.Font = Enum.Font.FredokaOne
+ScriptButton_4.Text = "Remote Spy"
+ScriptButton_4.TextColor3 = Color3.fromRGB(0,16,222)
+ScriptButton_4.TextSize = 14
+ScriptButton_4.MouseButton1Click:Connect(function()
+	ScriptButtonHolder_4.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	ScriptButtonHolder_4.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+end)
+
+ScriptButtonHolder_5.Name = "ScriptButtonHolder"
+ScriptButtonHolder_5.Parent = ScrollingFrame_1
+ScriptButtonHolder_5.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_5.BackgroundTransparency = 0.6000000238418579
+ScriptButtonHolder_5.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_5.BorderSizePixel = 0
+ScriptButtonHolder_5.Position = UDim2.new(0.265748024, 0,0.0465116277, 0)
+ScriptButtonHolder_5.Size = UDim2.new(0, 232,0, 27)
+
+UICorner_23.Parent = ScriptButtonHolder_5
+UICorner_23.CornerRadius = UDim.new(0,10)
+
+ScriptButton_5.Name = "ScriptButton"
+ScriptButton_5.Parent = ScriptButtonHolder_5
+ScriptButton_5.Active = true
+ScriptButton_5.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptButton_5.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ScriptButton_5.BackgroundTransparency = 1
+ScriptButton_5.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButton_5.BorderSizePixel = 0
+ScriptButton_5.Position = UDim2.new(0.5, 0,0.5, 0)
+ScriptButton_5.Size = UDim2.new(0, 232,0, 27)
+ScriptButton_5.Font = Enum.Font.FredokaOne
+ScriptButton_5.Text = "Universal Aimbot"
+ScriptButton_5.TextColor3 = Color3.fromRGB(0,16,222)
+ScriptButton_5.TextSize = 14
+ScriptButton_5.MouseButton1Click:Connect(function()
+	ScriptButtonHolder_5.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	ScriptButtonHolder_5.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	loadstring(game:HttpGet("https://pastebin.com/raw/e9v5tzz4"))()
+end)
+
+ScriptButtonHolder_6.Name = "ScriptButtonHolder"
+ScriptButtonHolder_6.Parent = ScrollingFrame_1
+ScriptButtonHolder_6.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_6.BackgroundTransparency = 0.6000000238418579
+ScriptButtonHolder_6.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_6.BorderSizePixel = 0
+ScriptButtonHolder_6.Position = UDim2.new(0.265748024, 0,0.0465116277, 0)
+ScriptButtonHolder_6.Size = UDim2.new(0, 232,0, 27)
+
+UICorner_24.Parent = ScriptButtonHolder_6
+UICorner_24.CornerRadius = UDim.new(0,10)
+
+ScriptButton_6.Name = "ScriptButton"
+ScriptButton_6.Parent = ScriptButtonHolder_6
+ScriptButton_6.Active = true
+ScriptButton_6.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptButton_6.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ScriptButton_6.BackgroundTransparency = 1
+ScriptButton_6.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButton_6.BorderSizePixel = 0
+ScriptButton_6.Position = UDim2.new(0.5, 0,0.5, 0)
+ScriptButton_6.Size = UDim2.new(0, 232,0, 27)
+ScriptButton_6.Font = Enum.Font.FredokaOne
+ScriptButton_6.Text = "Project Omega"
+ScriptButton_6.TextColor3 = Color3.fromRGB(0,16,222)
+ScriptButton_6.TextSize = 14
+ScriptButton_6.MouseButton1Click:Connect(function()
+	ScriptButtonHolder_6.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	ScriptButtonHolder_6.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Cerbiale/ProjectOmega/main/ProjectOmegaLoader.lua"))()
+end)
+
+ScriptButtonHolder_7.Name = "ScriptButtonHolder"
+ScriptButtonHolder_7.Parent = ScrollingFrame_1
+ScriptButtonHolder_7.BackgroundColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_7.BackgroundTransparency = 0.6000000238418579
+ScriptButtonHolder_7.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButtonHolder_7.BorderSizePixel = 0
+ScriptButtonHolder_7.Position = UDim2.new(0.265748024, 0,0.0465116277, 0)
+ScriptButtonHolder_7.Size = UDim2.new(0, 232,0, 27)
+
+UICorner_25.Parent = ScriptButtonHolder_7
+UICorner_25.CornerRadius = UDim.new(0,10)
+
+ScriptButton_7.Name = "ScriptButton"
+ScriptButton_7.Parent = ScriptButtonHolder_7
+ScriptButton_7.Active = true
+ScriptButton_7.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptButton_7.BackgroundColor3 = Color3.fromRGB(255,255,255)
+ScriptButton_7.BackgroundTransparency = 1
+ScriptButton_7.BorderColor3 = Color3.fromRGB(0,0,0)
+ScriptButton_7.BorderSizePixel = 0
+ScriptButton_7.Position = UDim2.new(0.5, 0,0.5, 0)
+ScriptButton_7.Size = UDim2.new(0, 232,0, 27)
+ScriptButton_7.Font = Enum.Font.FredokaOne
+ScriptButton_7.Text = "Dex Explorer"
+ScriptButton_7.TextColor3 = Color3.fromRGB(0,16,222)
+ScriptButton_7.TextSize = 14
+ScriptButton_7.MouseButton1Click:Connect(function()
+	ScriptButtonHolder_7.BackgroundColor3 = Color3.fromRGB(9, 28, 131)
+	wait(0.1)
+	ScriptButtonHolder_7.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true)
+end)
