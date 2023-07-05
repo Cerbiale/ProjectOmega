@@ -439,10 +439,10 @@ function Library:CreateWindow(GameName)
                 tweenton:Play()
                 wait(0.1)
                 tweentoff:Play()
-                for i, v in next, ElementsHolder_1:GetChildren() do -- We get all the pages that we added
-                    v.Visible = false -- then we make them invisible
+                for i, v in next, ElementsHolder_1:GetChildren() do
+                    v.Visible = false
                 end
-                Elements_1.Visible = true -- We make current page visible but not others
+                Elements_1.Visible = true
             end
         )
 
