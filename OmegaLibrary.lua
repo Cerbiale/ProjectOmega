@@ -235,7 +235,7 @@ function Library:CreateWindow(GameName)
 	UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 	
 function Library:CreatePopup(Title,Text)
-    local PopupHolder_1 = Instance.new("Frame")
+    	local PopupHolder_1 = Instance.new("Frame")
 	local UICorner_1 = Instance.new("UICorner")
 	local PopupTitleHolder_1 = Instance.new("Frame")
 	local UICorner_2 = Instance.new("UICorner")
