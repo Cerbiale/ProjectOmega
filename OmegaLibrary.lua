@@ -32,15 +32,7 @@ function Library:CreateWindow(GameName)
 	local Tabs_1 = Instance.new("ScrollingFrame")
 	local UIPadding_5 = Instance.new("UIPadding")
 	local UIListLayout_2 = Instance.new("UIListLayout")
-	local StatsHolder_1 = Instance.new("Frame")
-	local UICorner_97 = Instance.new("UICorner")
-	local TimeHolder_1 = Instance.new("Frame")
-	local UICorner_98 = Instance.new("UICorner")
-	local Time_1 = Instance.new("TextLabel")
-	local TimeHolder_2 = Instance.new("Frame")
-	local UICorner_99 = Instance.new("UICorner")
-	local Time_2 = Instance.new("TextLabel")
-	
+
 	ProjectOmega.Name = "ProjectOmega"
 	ProjectOmega.Parent = game.CoreGui
 	ProjectOmega.Enabled = true
@@ -245,109 +237,6 @@ function Library:CreateWindow(GameName)
 	UIListLayout_2.Padding = UDim.new(0, 7)
 	UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 
-	StatsHolder_1.Name = "StatsHolder"
-	StatsHolder_1.Parent = ProjectOmega
-	StatsHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
-	StatsHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
-	StatsHolder_1.BackgroundTransparency = 0.6000000238418579
-	StatsHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
-	StatsHolder_1.BorderSizePixel = 0
-	StatsHolder_1.Position = UDim2.new(0.864828169, 0,0.0989112332, 0)
-	StatsHolder_1.Size = UDim2.new(0, 169,0, 49)
-	
-	UICorner_97.Parent = StatsHolder_1
-	UICorner_97.CornerRadius = UDim.new(0,10)
-	
-	TimeHolder_1.Name = "TimeHolder"
-	TimeHolder_1.Parent = StatsHolder_1
-	TimeHolder_1.AnchorPoint = Vector2.new(0.5, 0.5)
-	TimeHolder_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
-	TimeHolder_1.BackgroundTransparency = 0.6000000238418579
-	TimeHolder_1.BorderColor3 = Color3.fromRGB(0,0,0)
-	TimeHolder_1.BorderSizePixel = 0
-	TimeHolder_1.Position = UDim2.new(0.260298699, 0,0.503859997, 0)
-	TimeHolder_1.Size = UDim2.new(0, 73,0, 35)
-	
-	UICorner_98.Parent = TimeHolder_1
-	UICorner_98.CornerRadius = UDim.new(0,10)
-	
-	Time_1.Name = "Time"
-	Time_1.Parent = TimeHolder_1
-	Time_1.AnchorPoint = Vector2.new(0.5, 0.5)
-	Time_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	Time_1.BackgroundTransparency = 1
-	Time_1.BorderColor3 = Color3.fromRGB(0,0,0)
-	Time_1.BorderSizePixel = 0
-	Time_1.Position = UDim2.new(0.5, 0,0.5, 0)
-	Time_1.Size = UDim2.new(0, 73,0, 35)
-	Time_1.Font = Enum.Font.FredokaOne
-	Time_1.Text = "12:00"
-	Time_1.TextColor3 = Color3.fromRGB(100,180,251)
-	Time_1.TextSize = 16
-	
-	TimeHolder_2.Name = "TimeHolder"
-	TimeHolder_2.Parent = StatsHolder_1
-	TimeHolder_2.AnchorPoint = Vector2.new(0.5, 0.5)
-	TimeHolder_2.BackgroundColor3 = Color3.fromRGB(0,0,0)
-	TimeHolder_2.BackgroundTransparency = 0.6000000238418579
-	TimeHolder_2.BorderColor3 = Color3.fromRGB(0,0,0)
-	TimeHolder_2.BorderSizePixel = 0
-	TimeHolder_2.Position = UDim2.new(0.737441897, 0,0.503859997, 0)
-	TimeHolder_2.Size = UDim2.new(0, 76,0, 35)
-	
-	UICorner_99.Parent = TimeHolder_2
-	UICorner_99.CornerRadius = UDim.new(0,10)
-	
-	Time_2.Name = "Time"
-	Time_2.Parent = TimeHolder_2
-	Time_2.AnchorPoint = Vector2.new(0.5, 0.5)
-	Time_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	Time_2.BackgroundTransparency = 1
-	Time_2.BorderColor3 = Color3.fromRGB(0,0,0)
-	Time_2.BorderSizePixel = 0
-	Time_2.Position = UDim2.new(0.5, 0,0.5, 0)
-	Time_2.Size = UDim2.new(0, 76,0, 35)
-	Time_2.Font = Enum.Font.FredokaOne
-	Time_2.Text = "FPS: 60"
-	Time_2.TextColor3 = Color3.fromRGB(255,255,255)
-	Time_2.TextSize = 16
-	
-	
-	local RunService = game:GetService("RunService")
-	
-	local start = tick()
-	local updaterate = 0.5
-	
-	local average_amount = 5 --Higher the average, the more accurate the fps will be!
-	
-	local fps_table = {}
-	
-	RunService.RenderStepped:Connect(function(frametime)
-		if tick() >= start+((updaterate)/average_amount) then
-			local fps = 1/frametime
-			table.insert(fps_table,fps)
-		end
-		if tick() >= start+updaterate then
-			start = tick()
-			local current = 0
-			local maxn = table.maxn(fps_table)
-			for i=1,maxn do
-				current = current+fps_table[i]
-			end
-			local fps = math.floor(current/maxn)
-			Time_2.Text = "FPS: "..fps
-			fps_table = {}
-		end
-	end)
-	
-	while true do 
-		local TimeInUnix = os.time() 
-		local stringToFormat = "%I:%M %p" 
-		local result = os.date(stringToFormat, TimeInUnix) 
-		Time_1.Text = result 
-		wait(1) 
-	end
-	
 	function Library:CreatePopup(Title, Text)
 		local PopupHolder_1 = Instance.new("Frame")
 		local UICorner_1 = Instance.new("UICorner")
